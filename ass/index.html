@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Project 2</title>
+    <!-- <link rel="stylesheet" href="css/sytle.css"> -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li:first-child {
+    margin-left: 5px;
+}
+
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+    float: left;
+    padding: 5px;
+}
+
+.nav ul li a:hover {
+    color: blue;
+}
+
+.nav ul li a:active {
+    color: red;
+}
+
+.logo {
+    padding: 0;
+    font-weight: bold;
+    float: inline-start;
+}
+
+.logo p {
+    font-size: 40px;
+    display: inline;
+
+}
+
+.main-content {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between; 
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+flex-basis: calc(50% - 20px); 
+margin-bottom: 20px; 
+}
+
+.img3,
+.img4 {
+margin-top: 20px; 
+}
+
+
+.content-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input input,
+.input textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info p {
+    font-size: 40px;
+    font-weight: bold;
+    display: inline;
+
+}
+
+.footer-info dl {
+    margin: 0;
+    padding: 20px;
+    display: inline-block;
+}
+
+.footer-info dt {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer-info dd {
+    margin: 0;
+}
+
+.copyright {
+    float: none;
+    margin-top: 10px;
+    align-content: center;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>LOGO</p>
+            <!-- <img src="#" alt="LOGO"> -->
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">News Details</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <div class="nav">
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">News Details</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <h1>News</h1>
+
+        <div class="main-content">
+            <div class="img1">
+                <img src="#" alt="Lorem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img2">
+                <img src="#" alt="Lorem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img3">
+                <img src="#" alt="Lorem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img4">
+                <img src="#" alt="Lorem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="img-all">
+            <img src="#" alt="Lorem">
+            <img src="#" alt="Lorem">
+            <img src="#" alt="Lorem">
+            <img src="#" alt="Lorem">
+            <img src="#" alt="Lorem">
+            <img src="#" alt="Lorem">
+        </div>
+        <form class="content-form" action="#">
+
+            <p><b>Newslatter</b></p>
+            <div class="input">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail">
+            </div>
+            <div class="input">
+                <label for="mess">Message:</label>
+                <textarea id="mess"></textarea>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+        <div class="index-end">
+            <img src="#" alt="Lorem">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore
+                et dolore magna aliqua.</p>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore
+                et dolore magna aliqua.</p>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+    </main>
+    <footer>
+        <!-- <div class="footer-logo">
+            <img src="#" alt="LOGO">
+        </div> -->
+        <div class="footer-info">
+            <p>LOGO</p>
+            <dl>
+                <dt>Contact</dt>
+                <dd>000 000 000</dd>
+            </dl>
+            <dl>
+                <dt>Address</dt>
+                <dd>Lorem ipsum dolor sit, amet.</dd>
+            </dl>
+
+        </div>
+        <p id="copyright">Copyright &copy; 2024Copyright © 2024 - XYZ Co., Inc. All Rights Reserved. Privacy Policy
+            Terms &
+            Conditions
+        </p>
+    </footer>
+</body>
+
+</html>
